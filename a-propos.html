@@ -467,11 +467,24 @@ a { color: var(--violet); text-decoration: none; }
   .timeline-marker-label { font-size: 0.5rem; letter-spacing: 0.05em; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
+
+/* Burger menu base styles (hidden by default, shown <900px) */
+.burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; width: 44px; height: 44px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+.burger span { display: block; width: 26px; height: 2px; background: var(--violet); transition: all 0.3s var(--ease); }
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .nav-links { position: fixed; top: 71px; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border); transform: translateY(-150%); transition: transform 0.4s var(--ease); gap: 1.5rem; z-index: 99; }
+  .nav-links.open { transform: translateY(0); }
+  .burger { display: flex; }
+  .logo-tagline { display: none; }
+  .zoho-badge-wrapper { display: none; }
+}
 @media (max-width: 720px) {
-  .nav-links { display: none; }
   .logo-name { font-size: 1.2rem; }
   .logo-icon { height: 42px; }
-  .logo-tagline { display: none; }
   .quick-info { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
