@@ -167,13 +167,28 @@ a.card:hover::after { opacity: 1; transform: translateX(0); }
 
 /* FORMS */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
-.contact-info h2 { margin-bottom: 1.5rem; font-size: 1.5rem; }
-.contact-info p { color: var(--text-muted); margin-bottom: 2rem; }
-.contact-block { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
-.contact-block:last-child { border-bottom: none; }
-.contact-label { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--violet); margin-bottom: 0.4rem; font-weight: 600; }
-.contact-value { color: var(--text); font-size: 1.05rem; font-weight: 500; }
-a.contact-value:hover { color: var(--violet-soft); }
+.contact-info h2 { margin-bottom: 0.75rem; font-size: 1.5rem; }
+.contact-info p { color: var(--text-muted); margin-bottom: 1.75rem; }
+
+/* Signature James */
+.contact-signature { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: var(--bg-soft); border-radius: 10px; margin-bottom: 1.5rem; border: 1px solid var(--border); }
+.contact-signature img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid var(--violet); flex-shrink: 0; }
+.contact-signature strong { display: block; color: var(--violet); font-weight: 700; font-size: 1rem; line-height: 1.2; }
+.contact-signature span { display: block; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem; }
+
+/* Cards infos */
+.contact-cards { display: flex; flex-direction: column; gap: 0.75rem; }
+.contact-card { display: flex; gap: 1rem; padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s var(--ease); }
+.contact-card:hover { border-color: var(--mint-dark); box-shadow: 0 2px 12px rgba(56,1,64,0.06); transform: translateY(-1px); }
+.contact-icon { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
+.contact-card .contact-label { font-family: var(--font-display); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--violet); margin-bottom: 0.3rem; font-weight: 700; }
+.contact-card strong, .contact-card a { color: var(--text); font-size: 1rem; font-weight: 500; line-height: 1.4; display: block; text-decoration: none; }
+.contact-card a:hover { color: var(--violet); }
+.contact-card small { display: block; color: var(--text-muted); font-size: 0.82rem; margin-top: 0.25rem; }
+
+/* Promesse */
+.contact-promise { margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--mint-bg); border-left: 3px solid var(--mint-darker); border-radius: 6px; font-size: 0.93rem; line-height: 1.55; color: var(--text); }
+.contact-promise strong { color: var(--mint-darker); display: block; margin-bottom: 0.3rem; font-weight: 700; }
 .contact-form { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; box-shadow: var(--shadow-card); }
 .form-group { margin-bottom: 1.25rem; }
 .form-group label { display: block; font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--violet); margin-bottom: 0.5rem; font-weight: 600; }
