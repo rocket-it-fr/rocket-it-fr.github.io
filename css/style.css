@@ -66,7 +66,7 @@ a:hover { color: var(--violet-soft); }
 .hero h1 .accent { color: var(--violet); font-style: italic; font-weight: 700; background: linear-gradient(180deg, transparent 55%, var(--mint) 55%); padding: 0 0.3em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .hero-lead { font-size: 1.18rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 52ch; }
 .hero-lead strong { color: var(--violet); font-weight: 600; }
-.hero-cta-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.hero-cta-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
 .hero-trust { padding-top: 1.75rem; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 1.25rem; }
 .hero-trust-text { font-size: 0.86rem; color: var(--text-muted); line-height: 1.5; }
 .hero-trust-text strong { color: var(--violet); font-weight: 600; }
@@ -247,7 +247,7 @@ a.contact-value:hover { color: var(--violet-soft); }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   padding: 0.65rem 1.1rem;
   background: var(--mint-bg);
   border: 1px solid var(--mint-dark);
