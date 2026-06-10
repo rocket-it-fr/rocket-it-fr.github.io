@@ -3,7 +3,7 @@
 > **Site officiel ROCKET IT** — Partenaire Zoho Officiel Certifié  
 > Document de synthèse technique pour reprise / évolution du projet
 
-**Dernière mise à jour** : 10 juin 2026  
+**Dernière mise à jour** : 10 juin 2026 (v1.3)  
 **URL de production** : https://www.rocket-it.fr/  
 **Repo GitHub** : https://github.com/rocket-it-fr/rocket-it-fr.github.io  
 **Statut** : 🟢 EN PRODUCTION
@@ -589,6 +589,14 @@ dig @nsa.n0c.com www.rocket-it.fr +short  # Serveur source PlanetHoster
 - Certificat SSL Let's Encrypt actif
 - Sitemap soumis Search Console
 - Bookings custom domain configuré
+
+### v1.3 — Juin 2026 (peaufinage post-prod)
+- Refonte page contact : signature James + 4 cartes avec icônes + encart "Notre promesse"
+- Correction merci.html : retrait mention "accusé de réception par email" (envoi mail non actif)
+- Footer statut-zoho aligné sur standard (emojis 🌍 📍 restaurés)
+- Règle CSS universelle pour désactiver `::before` sur tous labels centrés (`[style*="padding-left:0"]`)
+- Espace réduit entre CTAs hero et lien partenaire (64px → 20px)
+- **Retrait du nombre d'avis du SEO** : title, OG/Twitter descriptions, et bloc `aggregateRating` du JSON-LD supprimés sur avis.html et index.html — zéro maintenance future
 
 ---
 
