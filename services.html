@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services Zoho : Audit, Paramétrage, IA, Formation, Support | ROCKET IT</title>
+<meta name="description" content="Services d'intégration Zoho complets : audit métier, paramétrage CRM, IA, formation, support. Contrats sur mesure (forfait, régie, support, amélioration continue). Partenaire Zoho certifié à Besançon.">
+<meta name="keywords" content="services zoho, audit zoho, paramétrage zoho crm, formation zoho, intégration ia zoho, support zoho, deluge, blueprint, canvas">
+<meta name="author" content="James Cauliez, ROCKET IT">
+<meta name="language" content="French">
+<meta name="geo.region" content="FR-25">
+<meta name="geo.placename" content="Besançon, France">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rocket-it.fr/services.html">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="ROCKET IT">
+<meta property="og:url" content="https://www.rocket-it.fr/services.html">
+<meta property="og:title" content="Services Zoho — ROCKET IT">
+<meta property="og:description" content="De l'audit au support : 6 services pour intégrer Zoho dans votre PME ou ETI avec méthode.">
+<meta property="og:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ROCKET IT — Partenaire Zoho Officiel Certifié">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Services Zoho — ROCKET IT">
+<meta name="twitter:description" content="De l'audit au support : 6 services pour intégrer Zoho dans votre PME ou ETI avec méthode.">
+<meta name="twitter:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png?v=2">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#380140">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.service-detail { display: grid; grid-template-columns: auto 1fr; gap: 2rem 3rem; align-items: start; padding: 3rem 0; border-bottom: 1px solid var(--border); }
+.service-detail:first-of-type { padding-top: 1rem; }
+.service-detail:last-child { border-bottom: none; padding-bottom: 1rem; }
+.service-num { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5rem); font-weight: 700; color: var(--violet); line-height: 1; opacity: 0.85; }
+.service-detail h2 { margin-bottom: 1rem; color: var(--violet); }
+.service-detail > div > p { color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem; }
+.service-features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; margin-top: 1.5rem; }
+.service-features li { list-style: none; display: flex; align-items: flex-start; gap: 0.65rem; padding: 0.7rem 0.9rem; background: var(--bg-soft); border-left: 2px solid var(--lavande); border-radius: 4px; color: var(--text); font-size: 0.92rem; line-height: 1.4; transition: all 0.2s var(--ease); }
+.service-features li:hover { border-left-color: var(--mint-darker); background: var(--bg-lavande); transform: translateX(2px); }
+.service-features li::before { content: '✓'; color: var(--mint-darker); font-weight: 700; flex-shrink: 0; font-size: 0.95rem; line-height: 1.4; }
+.service-highlight { background: var(--mint-bg); border-left: 3px solid var(--mint-darker); padding: 1rem 1.25rem; border-radius: 4px; margin-top: 1.5rem; font-size: 0.95rem; }
+
+/* === MODÈLES D'ENGAGEMENT === */
+.engagement-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
+.engagement-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.75rem; transition: all 0.3s var(--ease); position: relative; }
+.engagement-card:hover { border-color: var(--mint-dark); box-shadow: 0 8px 24px rgba(56,1,64,0.08); transform: translateY(-3px); }
+.engagement-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.engagement-tag { display: inline-block; font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mint-darker); background: var(--mint-bg); padding: 0.35rem 0.8rem; border-radius: 100px; margin-bottom: 1rem; font-weight: 700; }
+.engagement-card h3 { color: var(--violet); margin-bottom: 0.75rem; font-size: 1.15rem; line-height: 1.3; }
+.engagement-card > p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.55; margin-bottom: 1rem; }
+.engagement-features { list-style: none; padding: 0; margin: 0; }
+.engagement-features li { position: relative; padding-left: 1.25rem; font-size: 0.88rem; color: var(--text); line-height: 1.5; margin-bottom: 0.4rem; }
+.engagement-features li::before { content: '→'; position: absolute; left: 0; color: var(--mint-darker); font-weight: 700; }
+.engagement-note { background: var(--bg-lavande); border-left: 3px solid var(--violet); border-radius: 6px; padding: 1.25rem 1.5rem; margin-top: 2rem; font-size: 0.95rem; line-height: 1.6; }
+
+@media (max-width: 720px) {
+  .service-detail { grid-template-columns: 1fr; gap: 0.75rem; }
+  .service-features { grid-template-columns: 1fr; }
+  .engagement-grid { grid-template-columns: 1fr; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": "Services ROCKET IT",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "Analyse", "description": "Audit métier, cartographie des données, profils utilisateurs, rôles et permissions, règles de sécurité."}},
+        {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "Paramétrage & développement", "description": "Configuration multi-modules Zoho, Canvas, Blueprint, Deluge, migration des données, conformité RGPD."}},
+        {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "Connexion aux applications tierces", "description": "Connecteurs Zoho Flow, développements API sur mesure, téléphonie, paiement, ERP, outils métier."}},
+        {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "Intégration de l'IA", "description": "Configuration Zia, intégration ChatGPT/Claude/Gemini via API et MCP, scoring prédictif, chatbots intelligents."}},
+        {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "Formation", "description": "Sessions en présentiel ou distanciel, adaptation par profil utilisateur, ateliers pratiques."}},
+        {"@type": "ListItem", "position": 6, "item": {"@type": "Service", "name": "Support & amélioration continue", "description": "Hotline, tickets prioritaires, réponse sous 24h ouvrées, évolutions fonctionnelles."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.rocket-it.fr/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rocket-it.fr/services.html"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/fusee-violet.webp" alt="" class="logo-icon">
+        <div class="logo-text"><span class="logo-name">ROCKET&nbsp;IT</span><span class="logo-tagline">Propulsez votre transformation digitale</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="avis.html">Avis clients</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="zoho-badge-wrapper"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <span class="section-label">Nos services</span>
+        <h1>De l'analyse au support,<br>une méthodologie complète.</h1>
+        <p class="lead">Chaque mission suit un parcours rigoureux pour transformer vos enjeux en résultats concrets. Pas de raccourci, pas de copier-coller — juste une approche métier au service de votre croissance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="service-detail" id="analyse">
+        <div class="service-num">01</div>
+        <div>
+          <h2>Analyse</h2>
+          <p>L'étape fondatrice d'une intégration Zoho réussie. Nous prenons le temps de comprendre votre métier, votre organisation et vos contraintes — humaines, techniques et réglementaires — pour proposer une architecture adaptée à votre réalité, pas un modèle générique.</p>
+          <ul class="service-features">
+            <li>Audit des processus métier</li>
+            <li>Cartographie des données et des flux</li>
+            <li>Analyse des profils &amp; utilisateurs</li>
+            <li>Définition des rôles &amp; permissions</li>
+            <li>Règles de sécurité et confidentialité</li>
+            <li>Définition des objectifs mesurables</li>
+            <li>Préconisations modulaires</li>
+            <li>Estimation budget &amp; planning</li>
+            <li>Roadmap d'intégration phasée</li>
+            <li>Identification des risques projet</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>🎯 Notre approche</strong> — Pas d'analyse pour faire joli. Chaque livrable est un outil de décision concret pour la direction : matrice des droits, schéma des flux, roadmap chiffrée. Vous savez exactement ce qui sera fait, par qui, et pour quel résultat.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail" id="parametrage">
+        <div class="service-num">02</div>
+        <div>
+          <h2>Paramétrage &amp; développement</h2>
+          <p>L'étape qui transforme l'analyse en système opérationnel. Nous configurons les modules Zoho, développons les automatisations, connectons vos outils existants et — si cela apporte une vraie valeur métier — intégrons l'IA dans vos workflows. Toujours dans une logique d'efficacité utilisateur.</p>
+          <ul class="service-features">
+            <li>Configuration multi-modules Zoho</li>
+            <li>Personnalisation des écrans (Canvas)</li>
+            <li>Mise en place des rôles &amp; permissions</li>
+            <li>Automatisations Zoho Flow &amp; Blueprint</li>
+            <li>Développements custom Deluge</li>
+            <li>Migration des données existantes</li>
+            <li>Connexion aux applications tierces (API)</li>
+            <li>Intégration outils métier du client</li>
+            <li>Intégration IA si pertinente (Zia, Claude, MCP)</li>
+            <li>Conformité RGPD &amp; sécurisation</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>🔧 Notre engagement</strong> — Aucun "copier-coller" d'un autre projet. Chaque paramétrage suit la matrice de droits et le périmètre validés en analyse. Tests systématiques avant mise en production, documentation interne livrée à l'équipe.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail" id="integrations">
+        <div class="service-num">03</div>
+        <div>
+          <h2>Connexion aux applications tierces</h2>
+          <p>Zoho ne fonctionne pas en silo. Nous le connectons à votre écosystème existant — téléphonie, comptabilité, ERP, outils métier — via API et connecteurs natifs. Vos données circulent automatiquement, sans saisie manuelle.</p>
+          <ul class="service-features">
+            <li>Connecteurs Zoho Flow natifs</li>
+            <li>Développements API sur mesure</li>
+            <li>Téléphonie : Aircall, Ringover, Wildix</li>
+            <li>Enrichissement de données : Pappers, Societe.com</li>
+            <li>Paiement : Stripe, GoCardless</li>
+            <li>ERP, outils métier, SaaS verticaux</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>🔗 Cas concret</strong> — Pour un de nos clients télécoms, intégration API Pappers : enrichissement automatique des fiches CRM à partir d'un SIRET (raison sociale, dirigeants, finances, géolocalisation). Économie : 2h/jour de saisie manuelle.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail" id="ia">
+        <div class="service-num">04</div>
+        <div>
+          <h2>Intégration de l'IA</h2>
+          <p>L'IA n'est plus un gadget : c'est un levier de productivité concret. Nous combinons <strong>Zia</strong> (l'IA native de Zoho, déjà incluse dans votre abonnement) et l'<strong>intégration des grands modèles externes</strong> comme ChatGPT, Claude ou Gemini via API et MCP. Le bon outil pour chaque usage.</p>
+          <ul class="service-features">
+            <li>Configuration de Zia (IA native Zoho)</li>
+            <li>Scoring prédictif des leads</li>
+            <li>Chatbots intelligents (Zoho SalesIQ)</li>
+            <li>Intégration ChatGPT / Claude / Gemini via API</li>
+            <li>Connecteurs MCP (Model Context Protocol)</li>
+            <li>Détection d'anomalies et analyses prédictives</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>💡 Bonne pratique ROCKET&nbsp;IT</strong> — Nous identifions toujours d'abord le besoin métier réel avant d'intégrer de l'IA. Pas d'IA pour faire joli — uniquement quand elle apporte un gain mesurable.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail" id="formation">
+        <div class="service-num">05</div>
+        <div>
+          <h2>Formation</h2>
+          <p>Un outil bien paramétré sans adoption utilisateur, c'est un investissement perdu. Nous formons vos équipes en présentiel ou distanciel, en adaptant le contenu à chaque profil métier. Notre objectif : autonomie complète à la sortie de la session.</p>
+          <ul class="service-features">
+            <li>Sessions présentiel ou distanciel</li>
+            <li>Adaptation par profil utilisateur</li>
+            <li>Supports pédagogiques sur mesure</li>
+            <li>Vidéos tutoriels personnalisées</li>
+            <li>Ateliers pratiques sur cas réels</li>
+            <li>Documentation interne Zoho Learn</li>
+            <li>Accompagnement au changement</li>
+            <li>Évaluation des acquis</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>👥 Notre vision</strong> — Nous formons des utilisateurs, pas seulement des opérateurs. Chacun comprend le "pourquoi" derrière le "comment" pour devenir autonome dans son métier et savoir s'adapter aux évolutions de l'outil.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail" id="support">
+        <div class="service-num">06</div>
+        <div>
+          <h2>Support &amp; amélioration continue</h2>
+          <p>Une fois les fonctionnalités déployées — ou si vous êtes déjà client Zoho avec des questions d'utilisation — nos experts vous apportent une solution rapidement. La réactivité est le maître mot de ROCKET&nbsp;IT. Au-delà du support, nous restons à vos côtés pour faire évoluer la solution avec votre activité.</p>
+          <ul class="service-features">
+            <li>Hotline et tickets prioritaires</li>
+            <li>Réponse sous 24h ouvrées</li>
+            <li>Évolutions fonctionnelles</li>
+            <li>Optimisation continue des process</li>
+            <li>Revues trimestrielles d'amélioration</li>
+            <li>Veille sur les nouveautés Zoho</li>
+          </ul>
+          <div class="service-highlight">
+            <strong>♻️ Amélioration continue</strong> — Votre Zoho n'est jamais figé : audit de performance régulier, identification des nouveaux modules pertinents, ajustement des automatisations selon les retours utilisateurs.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODÈLES D'ENGAGEMENT -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">Contrats sur mesure</span>
+      <h2 style="margin-bottom:1.25rem;">4 modèles d'engagement, combinables.</h2>
+      <p class="section-intro">Chaque projet est différent — votre contrat aussi. Nous construisons des engagements sur mesure à partir de 4 modèles, combinables selon votre maturité, votre budget et la nature de votre besoin.</p>
+
+      <div class="engagement-grid">
+        <div class="engagement-card">
+          <div class="engagement-icon">📋</div>
+          <div class="engagement-tag">Au forfait</div>
+          <h3>Projet à périmètre défini</h3>
+          <p>Vous savez ce que vous voulez : un montant fixe, des livrables clairs, un planning précis. Idéal pour les déploiements initiaux, les migrations ou les développements ciblés.</p>
+          <ul class="engagement-features">
+            <li>Budget verrouillé en amont</li>
+            <li>Livrables et jalons contractuels</li>
+            <li>Recette en fin de mission</li>
+          </ul>
+        </div>
+
+        <div class="engagement-card">
+          <div class="engagement-icon">⚙️</div>
+          <div class="engagement-tag">À la régie</div>
+          <h3>Accompagnement au temps passé</h3>
+          <p>Le périmètre évoluera. Vous voulez un expert mobilisable à la demande, sans avoir à redéfinir un contrat à chaque besoin. Facturation à la journée ou à l'heure.</p>
+          <ul class="engagement-features">
+            <li>Souplesse maximale sur le périmètre</li>
+            <li>Reporting détaillé des heures consommées</li>
+            <li>Adapté aux projets exploratoires ou évolutifs</li>
+          </ul>
+        </div>
+
+        <div class="engagement-card">
+          <div class="engagement-icon">🛟</div>
+          <div class="engagement-tag">Support</div>
+          <h3>Hotline et tickets prioritaires</h3>
+          <p>Votre Zoho est déjà déployé et vous avez besoin d'un partenaire pour répondre rapidement aux questions, débloquer des situations, ou former de nouveaux arrivants.</p>
+          <ul class="engagement-features">
+            <li>Réponse sous 24h ouvrées garantie</li>
+            <li>Forfait mensuel ou pack d'heures</li>
+            <li>Documentation des incidents et résolutions</li>
+          </ul>
+        </div>
+
+        <div class="engagement-card">
+          <div class="engagement-icon">♻️</div>
+          <div class="engagement-tag">Amélioration continue</div>
+          <h3>Évolution permanente de votre Zoho</h3>
+          <p>Votre métier change, vos process aussi. Nous restons à vos côtés pour faire évoluer la solution : nouveaux modules, nouvelles automatisations, optimisation continue.</p>
+          <ul class="engagement-features">
+            <li>Revues trimestrielles d'amélioration</li>
+            <li>Veille sur les nouveautés Zoho</li>
+            <li>Roadmap d'évolution co-construite</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="engagement-note">
+        <strong>💼 Sur mesure, vraiment</strong> — Ces 4 modèles ne sont pas exclusifs : ils se combinent et s'ajustent au fil du projet. Un exemple courant : <strong>forfait pour le déploiement initial</strong> puis bascule vers <strong>support + amélioration continue</strong>. Discutons-en pour construire l'engagement qui correspond exactement à votre situation.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section section-soft">
+    <div class="container">
+      <span class="section-label">La suite logique</span>
+      <h2>Discutons de votre projet.</h2>
+      <p>30 minutes pour comprendre vos enjeux, identifier les leviers Zoho pertinents, et vous remettre une première estimation.</p>
+      <a href="contact.html" class="btn btn-primary btn-arrow">Consultation gratuite</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><img src="assets/fusee-lavande.webp" alt=""><span>ROCKET&nbsp;IT</span></div>
+        <p class="footer-brand-text">Partenaire Zoho Officiel certifié. Intégration, paramétrage, formation et support pour PME et ETI exigeantes.</p>
+        <div class="footer-zoho-badge"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="avis.html">Avis clients</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+      <div class="footer-col"><h4>Ressources</h4><ul><li><a href="statut-zoho.html">Statut serveurs Zoho</a></li><li><a href="realisations.html">Études de cas</a></li><li><a href="https://store.zoho.eu/ResellerCustomerSignUp.do?id=23485ec546ddc9b73a7d4bac2358c5e1&amp;locale=fr" target="_blank" rel="noopener noreferrer" class="footer-trial-mini">Essai gratuit Zoho 🚀</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@rocket-it.fr">📧 contact@rocket-it.fr</a></li><li><a href="contact.html">📅 Consultation gratuite</a></li><li class="contact-bases">🌍 Toute la France &amp; international</li><li class="contact-bases">📍 Besançon · Lyon · Drôme/Ardèche</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ROCKET&nbsp;IT 🚀 — Tous droits réservés</span>
+      <span class="footer-legal-links"><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

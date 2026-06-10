@@ -1,0 +1,15 @@
+# robots.txt for ROCKET IT
+# https://www.rocket-it.fr/
+
+User-agent: *
+Allow: /
+Disallow: /merci.html
+
+# Allow image crawling (important pour SEO + Google Images)
+Allow: /assets/
+
+# Sitemap
+Sitemap: https://www.rocket-it.fr/sitemap.xml
+
+# Crawl politeness
+Crawl-delay: 1

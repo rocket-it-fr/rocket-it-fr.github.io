@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations Zoho : 14 études de cas PME & ETI tous secteurs | ROCKET IT</title>
+<meta name="description" content="14 études de cas concrètes d'intégration Zoho : télécom, notarial, cybersécurité, BTP, paysagisme, événementiel, packaging, beauté, loisirs. 12+ secteurs accompagnés par ROCKET IT.">
+<meta name="keywords" content="études de cas zoho, projets zoho pme, réalisations crm zoho, intégration zoho secteur télécom, zoho notarial, zoho btp, cas client zoho">
+<meta name="author" content="James Cauliez, ROCKET IT">
+<meta name="language" content="French">
+<meta name="geo.region" content="FR-25">
+<meta name="geo.placename" content="Besançon, France">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rocket-it.fr/realisations.html">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="ROCKET IT">
+<meta property="og:url" content="https://www.rocket-it.fr/realisations.html">
+<meta property="og:title" content="Réalisations Zoho — Études de cas par secteur">
+<meta property="og:description" content="Des projets Zoho concrets : 14 études de cas dans 12+ secteurs. Télécom, notarial, BTP, paysagisme, événementiel...">
+<meta property="og:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ROCKET IT — Partenaire Zoho Officiel Certifié">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Réalisations Zoho — Études de cas par secteur">
+<meta name="twitter:description" content="Des projets Zoho concrets : 14 études de cas dans 12+ secteurs. Télécom, notarial, BTP, paysagisme, événementiel...">
+<meta name="twitter:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png?v=2">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#380140">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.sectors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+.sector { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem 1.25rem; box-shadow: var(--shadow-card); text-align: center; transition: all 0.3s var(--ease); }
+.sector:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); border-color: var(--border-lavande); }
+.sector-icon { font-size: 2.25rem; margin-bottom: 0.75rem; }
+.sector h3 { font-size: 1rem; color: var(--violet); margin-bottom: 0.5rem; }
+.sector p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+.case-study { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2.25rem; box-shadow: var(--shadow-card); margin-bottom: 1.75rem; transition: all 0.3s var(--ease); }
+.case-study:hover { box-shadow: var(--shadow-card-hover); }
+.case-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.case-tag { padding: 0.3rem 0.75rem; background: var(--bg-lavande); color: var(--violet); border-radius: 100px; font-weight: 600; }
+.case-tag.mint { background: var(--mint-bg); color: var(--mint-darker); }
+.case-study h3 { color: var(--violet); font-size: 1.35rem; margin-bottom: 1.5rem; line-height: 1.3; }
+.case-section { margin-bottom: 1.25rem; }
+.case-section:last-of-type { margin-bottom: 0; }
+.case-section-label { font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text); font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+.case-section p { color: var(--text-muted); font-size: 0.96rem; line-height: 1.65; }
+.case-section p strong { color: var(--text); font-weight: 600; }
+.case-modules { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.case-module { padding: 0.3rem 0.7rem; background: var(--bg-soft); color: var(--violet); border-radius: 4px; font-size: 0.78rem; font-weight: 600; font-family: var(--font-display); letter-spacing: 0.04em; }
+.case-highlight { background: var(--mint-bg); border-left: 3px solid var(--mint-darker); padding: 1rem 1.25rem; border-radius: 4px; margin-top: 1.25rem; font-size: 0.92rem; color: var(--text); }
+.case-highlight strong { color: var(--mint-darker); }
+.placeholder-box { background: var(--mint-bg); border: 2px dashed var(--mint-dark); border-radius: 8px; padding: 2rem; text-align: center; margin: 2rem 0; }
+.placeholder-box h3 { color: var(--mint-darker); margin-bottom: 0.75rem; }
+.placeholder-box p { color: var(--text-muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.rocket-it.fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Réalisations", "item": "https://www.rocket-it.fr/realisations.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/fusee-violet.webp" alt="" class="logo-icon">
+        <div class="logo-text"><span class="logo-name">ROCKET&nbsp;IT</span><span class="logo-tagline">Propulsez votre transformation digitale</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html" class="active">Réalisations</a></li>
+        <li><a href="avis.html">Avis clients</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="zoho-badge-wrapper"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <span class="section-label">Nos réalisations</span>
+        <h1>Des projets concrets,<br>dans des secteurs variés.</h1>
+        <p class="lead">De la PME télécom au cabinet notarial, en passant par les paysagistes et les industriels : Zoho s'adapte à tous les métiers. Voici quelques exemples de réalisations ROCKET&nbsp;IT.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="section-label">Secteurs d'activité</span>
+      <h2 style="margin-bottom:1.25rem;">12+ secteurs accompagnés.</h2>
+      <p class="section-intro">Notre force : comprendre rapidement la spécificité de chaque métier et adapter Zoho en conséquence — pas l'inverse. De l'industrie au service B2B, du salon de beauté à l'événementiel de luxe.</p>
+
+      <div class="sectors-grid">
+        <div class="sector"><div class="sector-icon">📡</div><h3>Télécom & IT</h3><p>Opérateurs, intégrateurs réseau, ESN</p></div>
+        <div class="sector"><div class="sector-icon">🛡️</div><h3>Cybersécurité & Cloud</h3><p>Services managés, infrastructures, partenaires éditeurs</p></div>
+        <div class="sector"><div class="sector-icon">🤖</div><h3>IA & Data</h3><p>Éditeurs SaaS, solutions d'intelligence artificielle</p></div>
+        <div class="sector"><div class="sector-icon">🏗️</div><h3>BTP & Construction</h3><p>Aménagement intérieur, gros œuvre</p></div>
+        <div class="sector"><div class="sector-icon">🏭</div><h3>Industrie</h3><p>PMI, fabrication, distribution</p></div>
+        <div class="sector"><div class="sector-icon">📦</div><h3>Packaging</h3><p>Industrie de l'emballage</p></div>
+        <div class="sector"><div class="sector-icon">🌿</div><h3>Paysagisme</h3><p>Conception et entretien d'espaces verts</p></div>
+        <div class="sector"><div class="sector-icon">⚖️</div><h3>Notarial</h3><p>Études notariales, gestion de patrimoine</p></div>
+        <div class="sector"><div class="sector-icon">💇</div><h3>Beauté & Esthétique</h3><p>Salons de coiffure, instituts capillaires</p></div>
+        <div class="sector"><div class="sector-icon">🎭</div><h3>Événementiel & spectacle</h3><p>Production artistique, événements premium</p></div>
+        <div class="sector"><div class="sector-icon">🎢</div><h3>Loisirs</h3><p>Parcs d'attractions, conception ludique</p></div>
+        <div class="sector"><div class="sector-icon">🏛️</div><h3>Collectivités</h3><p>Communication institutionnelle</p></div>
+        <div class="sector"><div class="sector-icon">💼</div><h3>Services B2B</h3><p>Conseil, formation, prestations</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <span class="section-label">Études de cas</span>
+      <h2 style="margin-bottom:1.25rem;">Quelques projets représentatifs<br>parmi nos réalisations.</h2>
+      <p class="section-intro">Voici une sélection de missions que nous présentons en détail. Notre portefeuille de projets couvre bien d'autres secteurs et configurations — n'hésitez pas à nous solliciter si votre contexte ne ressemble à aucun de ceux-ci. Par respect de la confidentialité, les noms de nos clients ne sont pas mentionnés.</p>
+
+      <!-- 1. PME TÉLÉCOM MULTISITES (Neven) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Télécom · Multisites</span>
+          <span class="case-tag mint">130 utilisateurs</span>
+          <span class="case-tag mint">DSI temps partagé</span>
+        </div>
+        <h3>PME télécom multisites · Déploiement Zoho One complet</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>PME de 130 collaborateurs, 22M€ de CA, plusieurs sites en France. ERP historique vieillissant, outils dispersés, manque de visibilité globale sur l'activité. La direction souhaitait <strong>une refonte complète de l'écosystème SI</strong> pour piloter l'activité de manière centralisée.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Accompagnement pluriannuel : déploiement de la suite Zoho One sur toute l'entreprise, refonte de la chaîne commerciale (CRM + Books + Inventory), mise en place du support client (Desk), environnement collaboratif moderne (WorkDrive + Cliq), programme de formation interne (Learn), signature électronique (Sign), pilotage par les chiffres (Analytics).</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Desk</span><span class="case-module">Books</span><span class="case-module">Inventory</span><span class="case-module">Analytics</span><span class="case-module">WorkDrive</span><span class="case-module">Cliq</span><span class="case-module">Learn</span><span class="case-module">Sign</span><span class="case-module">Vault</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Bascule progressive et maîtrisée d'un SI éclaté vers une plateforme unique. Tous les métiers (commercial, support, finance, logistique, RH, IT) sur le même outil.
+        </div>
+      </article>
+
+      <!-- 2. ESN CYBERSÉCURITÉ INTERNATIONAL (Brixio) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Cybersécurité · Cloud</span>
+          <span class="case-tag mint">International (EMEA + APAC)</span>
+          <span class="case-tag mint">Régie continue</span>
+        </div>
+        <h3>ESN cybersécurité internationale · Amélioration continue Zoho</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>ESN spécialisée en cybersécurité et services managés, partenaire d'éditeurs internationaux. Activité commerciale multi-zones (Europe, Moyen-Orient, Asie-Pacifique). Le client avait déjà un environnement Zoho mature mais cherchait <strong>une optimisation continue</strong> pour suivre la croissance et industrialiser les process.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Mission de régie au temps passé : création des territoires géographiques (North America, EMEA, APAC), filtrage par éditeur partenaire, rapports planifiés sur les renouvellements de contrats, fonctions custom Deluge pour synchroniser les jalons Sales Order ↔ Invoice Schedule, intégration de Claude AI dans les workflows ZOHO via API. Accompagnement permanent de l'équipe IT interne.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Books</span><span class="case-module">Projects</span><span class="case-module">People</span><span class="case-module">Analytics</span><span class="case-module">Flow</span><span class="case-module">Deluge</span><span class="case-module">API Claude</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Pipeline international structuré, intégration IA productive en workflows, support quotidien d'une équipe interne autonome.
+        </div>
+      </article>
+
+      <!-- 3. DISTRIBUTEUR CUISINES PREMIUM (B&F Productions) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Distribution premium · Aménagement</span>
+          <span class="case-tag mint">Projet 7 lots</span>
+          <span class="case-tag mint">Réseau commercial</span>
+        </div>
+        <h3>Distributeur de cuisines allemandes &amp; aménagements sur mesure · Plateforme commerciale &amp; RH</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Acteur reconnu de la distribution de cuisines allemandes haut de gamme et de la fabrication sur mesure d'aménagements intérieurs. Réseau commercial terrain à piloter, outils dispersés, pas de système centralisé pour <strong>commercial, support, communication et RH</strong>. Besoin de structurer les tournées et rapports de visite, le support du réseau, le marketing produit et l'ensemble des processus RH (recrutement, formation).</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Projet structuré en 7 lots : (1) gouvernance Zoho One, (2) CRM commercial terrain avec rapports de visite, (3) support réseau via Desk, (4) marketing &amp; communication (Campaigns, Social, Survey, Projects), (5) RH (People + Recruit), (6) documentation interne (Learn), (7) reporting avancé (Analytics). Centralisation totale du pilotage du réseau de distribution.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Desk</span><span class="case-module">Campaigns</span><span class="case-module">Social</span><span class="case-module">Survey</span><span class="case-module">Projects</span><span class="case-module">People</span><span class="case-module">Recruit</span><span class="case-module">Learn</span><span class="case-module">Analytics</span><span class="case-module">WorkDrive</span><span class="case-module">Cliq</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Un seul écosystème pour piloter la marque, le réseau, le terrain, le support et les équipes — fini les silos par métier.
+        </div>
+      </article>
+
+      <!-- 4. ÉDITEUR SAAS IA (Morphaius) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">IA &amp; Data · Éditeur SaaS</span>
+          <span class="case-tag mint">Restructuration CRM</span>
+        </div>
+        <h3>Éditeur SaaS d'intelligence artificielle · Restructuration CRM et facturation</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Éditeur français de solutions IA en pleine croissance. CRM Zoho déjà en place mais <strong>mal optimisé</strong> : champs inutiles, données incohérentes, pas d'automatisation, pipeline unique trop simpliste, factures peu esthétiques. Besoin de professionnaliser tout l'écosystème commercial pour soutenir le scale-up.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Audit complet du CRM, puis restructuration en 2 phases : (1) Réorganisation des modules Pistes/Comptes/Contacts/Affaires avec convention de nommage et blueprints process, (2) Animation commerciale avec automatisations et CANVAS aux couleurs de la marque. Refonte des modèles de devis/factures dans Zoho Billing, intégration WorkDrive pour la documentation client.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Billing</span><span class="case-module">WorkDrive</span><span class="case-module">Flow</span><span class="case-module">Blueprint</span><span class="case-module">CANVAS</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Interface CRM aux couleurs de la marque, données fiabilisées, factures professionnelles — image de marque cohérente jusqu'au client final.
+        </div>
+      </article>
+
+      <!-- 5. ÉTUDE NOTARIALE (C&C Notaires) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Notarial · Patrimonial</span>
+          <span class="case-tag mint">Cabinet parisien</span>
+          <span class="case-tag mint">Canvas sur mesure</span>
+          <span class="case-tag mint">IA via MCP</span>
+        </div>
+        <h3>Étude notariale parisienne · CRM patrimonial sur mesure &amp; intégration IA</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Étude notariale spécialisée en gestion patrimoniale haut de gamme. Suivi à la fois de <strong>clients privés (familles)</strong> et de <strong>clients institutionnels</strong> (structures immobilières, sociétés de gestion). Forte exigence sur la qualité de l'affichage CRM, la gestion patrimoniale (immobilier, financier, professionnel), le suivi multi-générationnel des familles, et la distinction entre les conseils d'une personne et ceux d'une structure. Volonté d'intégrer l'IA dans les workflows sans compromis sur la confidentialité, et d'interconnecter le CRM avec un outil métier tiers via API.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Mise en place complète du CRM avec création de <strong>Canvas sur mesure</strong> aux couleurs de la charte graphique du cabinet : fiches contacts (Client privé, Client institutionnel, Partenaire, Conseil), comptes (Famille, Client institutionnel, Société partenaire, Autre organisation), listes contacts &amp; comptes avec avatars et gestionnaire principal. Indicateurs de statut par code couleur (Prospect / En veille / Actif / Inactif), pastilles de typologie, multi-gestionnaires assignés. <strong>Suivi patrimoine consolidé</strong> par famille (somme immobilier + financier + professionnel des membres) avec rôle famille, référent et patrimoine individuel. Module "Relations" repensé pour gérer les liens Compte ⇄ Contact (relations Amicale, Association, Conseil) et identifier les "clients en commun" avec les sociétés partenaires. Récemment : configuration d'un <strong>serveur MCP (Model Context Protocol)</strong> connecté à Zoho CRM pour utiliser Claude AI sur les données métier, et intégration API sandbox vers l'outil patrimonial partenaire.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Canvas</span><span class="case-module">WorkDrive</span><span class="case-module">Sign</span><span class="case-module">Blueprint</span><span class="case-module">Deluge</span><span class="case-module">API</span><span class="case-module">MCP Server</span><span class="case-module">Claude AI</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Un CRM 100% adapté au métier patrimonial : vision consolidée famille / institutionnel, suivi patrimoine multi-actifs, distinction conseils personne vs structure, et IA productive sans compromis sur la confidentialité du secret professionnel.
+        </div>
+      </article>
+
+      <!-- 6. PME PAYSAGISME MULTISITE (Artemis) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Paysagisme · Multisite</span>
+          <span class="case-tag mint">20 ans de l'entreprise</span>
+          <span class="case-tag mint">Activité saisonnière</span>
+        </div>
+        <h3>Entreprise de paysagisme multisite · Pilotage chantiers et campagnes anniversaire</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Entreprise de paysagisme multisite avec activité saisonnière forte. Devis et chantiers gérés sans automatisation, suivi commercial éclaté, communication client non structurée. Besoin double : <strong>industrialiser le devis et le pilotage chantier</strong>, et accompagner la campagne marketing des 20 ans de l'entreprise.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Mission de régie au mois avec gestion de projet permanente : création automatique de devis à la création d'une affaire (intégration outil métier "DFO"), création auto de sites depuis comptes, gestion des droits utilisateurs, workflows de relance, intégration des campagnes marketing 20 ans (multi-envois). Support continu et amélioration des process au fil de l'eau.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Books</span><span class="case-module">Campaigns</span><span class="case-module">Projects</span><span class="case-module">Flow</span><span class="case-module">Analytics</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Devis générés automatiquement, équipes terrain et back-office synchronisées, campagne anniversaire pilotée dans le même outil que l'activité quotidienne.
+        </div>
+      </article>
+
+      <!-- 7. PME TÉLÉCOM B2B (I-Convergence) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Télécom · B2B</span>
+          <span class="case-tag mint">Sécurité documentaire</span>
+        </div>
+        <h3>PME télécom B2B · Sécurisation documentaire et qualité de données</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>PME télécom B2B utilisant intensivement Zoho. Besoin de <strong>sécuriser l'accès aux documents</strong> projet par projet (un client ne doit pas voir les documents d'un autre), de fiabiliser les données (problème de doublons sur les comptes et fichiers WorkDrive) et d'industrialiser la qualification prospect.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Développement Deluge custom pour gérer dynamiquement les droits sur les dossiers WorkDrive en fonction du gestionnaire commercial du compte (traitement par lots, fonctions planifiées). Campagne de dédoublonnage massive Comptes/WorkDrive. Création de blueprints pour la qualification prospects et les remarques NRP automatiques. Validation du domaine sur Zoho One.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">WorkDrive</span><span class="case-module">Deluge</span><span class="case-module">Blueprint</span><span class="case-module">Analytics</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Cloisonnement automatique des documents par compte client, données fiabilisées, équipe commerciale outillée pour la qualification.
+        </div>
+      </article>
+
+      <!-- 8. PME TÉLÉCOM B2C (Novelcom) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Télécom · B2C</span>
+          <span class="case-tag mint">Qualification prospects</span>
+        </div>
+        <h3>Opérateur télécom B2C · Industrialisation de la qualification prospects</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Opérateur télécom avec un fort volume de prospects entrants. Difficulté à qualifier rapidement et de façon homogène. <strong>Besoin d'une interface de saisie simplifiée</strong> pour les équipes (commerciaux, plateaux télé) et d'un suivi visuel de la qualification.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Création d'un Kiosk Zoho CRM pour la saisie rapide du parc prospect avec uniquement les champs pertinents par étape. Mise en place d'un Blueprint "Qualification Prospect" pour guider les équipes étape par étape. Création d'un tableau de bord "Suivi Qualification Prospect" pour la direction commerciale.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Kiosk</span><span class="case-module">Blueprint</span><span class="case-module">Analytics</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Saisie simplifiée et homogène, processus de qualification standardisé, pilotage en temps réel de l'efficacité commerciale.
+        </div>
+      </article>
+
+      <!-- 9. OPÉRATEUR TÉLÉCOM + IT B2B (Newlink) -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Télécom + IT · Pro</span>
+          <span class="case-tag mint">Multi-services</span>
+          <span class="case-tag mint">Support &amp; SAV</span>
+        </div>
+        <h3>Opérateur télécom &amp; IT pour pros · Mise en place support client complet</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Prestataire multi-services pour entreprises : Internet, mobile, IT, sécurité, VPN, téléphonie, infogérance et vidéosurveillance. Déjà équipé de Zoho One mais sans support client structuré pour ce périmètre large. Besoin d'un <strong>workflow support complet</strong> : multi-canaux de réception, SLA contractuels par type de service, escalades, notifications SMS sur les incidents critiques (alertes panne réseau), reporting de pilotage.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Déploiement complet Zoho Desk : canaux de réception, templates de tickets par type de service, SLA et règles d'escalade adaptés à la diversité de l'offre, attribution automatique selon produit/service/compétences, portail client à l'identité visuelle du prestataire, synchronisation bidirectionnelle CRM ↔ Desk, notifications internes (Cliq) et externes (email + SMS pour alertes critiques telles que pannes totales), reporting hebdomadaire automatique au responsable support, documentation interne dans Zoho Learn.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">Desk</span><span class="case-module">CRM</span><span class="case-module">SalesIQ</span><span class="case-module">Cliq</span><span class="case-module">Learn</span><span class="case-module">SMS</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Support client professionnalisé sur l'ensemble de l'offre (télécom, IT, sécurité), engagement SLA mesuré, notifications proactives sur incidents critiques.
+        </div>
+      </article>
+
+      <!-- 10. INSTITUT BEAUTÉ POLYNÉSIE -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Beauté · Esthétique</span>
+          <span class="case-tag mint">Polynésie française 🇵🇫</span>
+          <span class="case-tag mint">Fiscalité locale</span>
+        </div>
+        <h3>Institut de beauté &amp; esthétique en Polynésie · Migration Books et gestion de stock</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Institut de beauté &amp; esthétique basé en Polynésie française, utilisant Zoho Invoice pour sa facturation mais devenu insuffisant. Besoin de <strong>passer à Zoho Books</strong> pour gérer un catalogue produits étoffé (~300 références), la gestion de stock et la conformité à la fiscalité polynésienne (régime spécifique DOM-TOM).</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Audit et reparamétrage complet de Zoho Books après migration depuis Zoho Invoice : mise à jour du catalogue produits (300 articles), configuration comptable adaptée à la fiscalité polynésienne, paramétrage du module Inventory, formation à la gestion des stocks et des entrées/sorties. Mission menée intégralement en distanciel sur 3 jours.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">Books</span><span class="case-module">Inventory</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Gestion comptable et stock unifiée, conforme à la fiscalité locale DOM-TOM, équipe formée à l'autonomie complète sur l'outil.
+        </div>
+      </article>
+
+      <!-- 11. DISTRIBUTEUR LOISIRS LUXEMBOURG -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Loisirs · Sourcing Chine</span>
+          <span class="case-tag mint">Luxembourg 🇱🇺</span>
+          <span class="case-tag mint">SAV pièces détachées</span>
+          <span class="case-tag mint">Gestion projets sécurité</span>
+        </div>
+        <h3>Distributeur d'équipements ludiques · Structuration CRM, projets &amp; SAV</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Distributeur luxembourgeois d'équipements de loisirs avec sourcing en Chine et SAV pièces détachées en aval. Spécialiste des parcs de loisirs : projets avec <strong>de nombreux intervenants</strong> (designers, fournisseurs, installateurs) et <strong>impératifs de sécurité stricts</strong> à respecter. Besoin de centraliser les informations commerciales, sécuriser le suivi des projets (design Chine, devis, relances, planification), et professionnaliser le SAV pièces.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Mise en place Zoho One : structuration CRM (Leads, Comptes, Contacts, Affaires) avec pipeline projets dédié, scoring de qualification, vues personnalisées. Déploiement <strong>Zoho Projects</strong> pour le suivi et la planification des chantiers parc de loisirs : tâches, jalons, intervenants, points de validation sécurité. Automatisations métier : rappels design Chine, suivi devis, relances clients, sécurisation des étapes critiques. Configuration Zoho Desk pour SAV avec catégorisation tickets et structuration du suivi pièces détachées. Formation utilisateurs + Zoho Learn pour la documentation interne.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Projects</span><span class="case-module">Desk</span><span class="case-module">Flow</span><span class="case-module">Learn</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Visibilité totale sur la chaîne de valeur, de la conception Chine à la livraison du parc client en passant par les jalons sécurité, dans un seul outil.
+        </div>
+      </article>
+
+      <!-- 12. PME PACKAGING -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Industrie · Packaging</span>
+          <span class="case-tag mint">Migration Zoho One</span>
+        </div>
+        <h3>PME industrielle packaging · Migration et structuration Zoho One</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>PME industrielle spécialisée dans l'emballage, utilisant des outils dispersés (tableurs, logiciels métiers anciens). Besoin d'une <strong>plateforme unifiée</strong> couvrant la prospection commerciale, la facturation et la gestion des stocks pour structurer la croissance.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Forfait paramétrage Zoho One avec migration de la base clients : structuration du CRM (Prospects, Comptes, Contacts, pipeline de vente), convention de nommage et bonnes pratiques. Configuration Zoho Books/Inventory : plan comptable, TVA, banque, catalogue articles, modèles de devis/commande/facture, suivi des stocks et réceptions. Intégration CRM ↔ Books pour fluidité du devis vers la facture.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">CRM</span><span class="case-module">Books</span><span class="case-module">Inventory</span><span class="case-module">Flow</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Chaîne devis → commande → facture → livraison dans un seul outil, équipe commerciale et finance synchronisées.
+        </div>
+      </article>
+
+      <!-- 13. AGENCE ÉVÉNEMENTIEL LUXE -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Événementiel · Luxe</span>
+          <span class="case-tag mint">Boîtes mail collaboratives</span>
+        </div>
+        <h3>Agence événementielle de luxe · Centralisation des emails et collaboration</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Agence d'événementiel haut-de-gamme avec plusieurs collaborateurs et plusieurs boîtes mail dispersées (réservations, contacts artistes, événements). Besoin de <strong>centraliser la collaboration email</strong> et de basculer d'OVH vers Zoho Mail / TeamInbox pour un traitement collectif des demandes.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Création des nouveaux utilisateurs et boîtes Zoho TeamInbox, redirection des adresses email existantes (OVH → Zoho), configuration des accès partagés aux boîtes collaboratives, paramétrage de l'Outlook personnel pour les dirigeants, transfert de compétences à l'équipe.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">Mail</span><span class="case-module">TeamInbox</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Tous les emails clients traités en équipe, plus de mails perdus ou en doublon, expérience client renforcée.
+        </div>
+      </article>
+
+      <!-- 14. COLLECTIVITÉ TERRITORIALE -->
+      <article class="case-study">
+        <div class="case-meta">
+          <span class="case-tag">Collectivité territoriale</span>
+          <span class="case-tag mint">Marché public</span>
+          <span class="case-tag mint">Mission conseil</span>
+        </div>
+        <h3>Communauté d'agglomération · Rédaction CCTP marché numérique</h3>
+        <div class="case-section">
+          <div class="case-section-label">🎯 Le besoin</div>
+          <p>Communauté d'agglomération préparant un marché public dans le numérique. Cahier des charges initial à transformer en <strong>CCTP technique exhaustif</strong> intégrant les bonnes pratiques professionnelles, les normes applicables et un référentiel exigeant pour départager les candidats.</p>
+        </div>
+        <div class="case-section">
+          <div class="case-section-label">⚡ Notre intervention</div>
+          <p>Mission ponctuelle d'expertise (hors Zoho) : analyse du besoin initial, réunion sur site, rédaction d'un CCTP structuré et exhaustif intégrant exigences techniques, normes et bonnes pratiques. Livraison au format Word et PDF prête à intégrer au DCE, avec rounds de relectures et ajustements.</p>
+        </div>
+        <div class="case-modules">
+          <span class="case-module">Conseil</span><span class="case-module">Rédaction CCTP</span><span class="case-module">Marché public</span>
+        </div>
+        <div class="case-highlight">
+          <strong>💡 Résultat clé</strong> — Document CCTP de qualité institutionnelle, prêt pour publication et capable de discriminer techniquement les soumissionnaires.
+        </div>
+      </article>
+
+      <div class="placeholder-box">
+        <h3>Votre projet ne ressemble à aucun de ceux-là ?</h3>
+        <p>C'est probablement parce que <strong>chaque projet est unique</strong>. Nous adaptons Zoho à votre métier, pas l'inverse.<br>Contactez-nous pour échanger sur votre contexte spécifique.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label" style="padding-left:0;">Votre projet</span>
+      <h2>Et si on parlait du vôtre ?</h2>
+      <p>Chaque secteur a ses spécificités. Nous adaptons Zoho à votre métier, pas l'inverse. Discutons-en.</p>
+      <a href="contact.html" class="btn btn-primary btn-arrow">Consultation gratuite</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><img src="assets/fusee-lavande.webp" alt=""><span>ROCKET&nbsp;IT</span></div>
+        <p class="footer-brand-text">Partenaire Zoho Officiel certifié. Intégration, paramétrage, formation et support pour PME et ETI exigeantes.</p>
+        <div class="footer-zoho-badge"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="avis.html">Avis clients</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+      <div class="footer-col"><h4>Ressources</h4><ul><li><a href="statut-zoho.html">Statut serveurs Zoho</a></li><li><a href="realisations.html">Études de cas</a></li><li><a href="https://store.zoho.eu/ResellerCustomerSignUp.do?id=23485ec546ddc9b73a7d4bac2358c5e1&amp;locale=fr" target="_blank" rel="noopener noreferrer" class="footer-trial-mini">Essai gratuit Zoho 🚀</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@rocket-it.fr">📧 contact@rocket-it.fr</a></li><li><a href="contact.html">📅 Consultation gratuite</a></li><li class="contact-bases">🌍 Toute la France &amp; international</li><li class="contact-bases">📍 Besançon · Lyon · Drôme/Ardèche</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> ROCKET&nbsp;IT 🚀 — Tous droits réservés</span><span class="footer-legal-links"><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a></span></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

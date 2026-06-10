@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos | James Cauliez, fondateur ROCKET IT — Ex-DSI, Expert Zoho</title>
+<meta name="description" content="James Cauliez, fondateur de ROCKET IT. 20 ans d'expérience en Direction des Systèmes d'Information (Seiko, Vetoquinol, Wienerberger). 7 ans d'expertise Zoho. Partenaire Zoho Officiel certifié.">
+<meta name="keywords" content="james cauliez, fondateur rocket it, dsi expert zoho, consultant zoho besançon, expertise zoho france, ancien dsi">
+<meta name="author" content="James Cauliez, ROCKET IT">
+<meta name="language" content="French">
+<meta name="geo.region" content="FR-25">
+<meta name="geo.placename" content="Besançon, France">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rocket-it.fr/a-propos.html">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="ROCKET IT">
+<meta property="og:url" content="https://www.rocket-it.fr/a-propos.html">
+<meta property="og:title" content="À propos — James Cauliez, fondateur ROCKET IT">
+<meta property="og:description" content="Ex-DSI international devenu Partenaire Zoho Officiel. 20 ans d'expérience IT au service des PME et ETI.">
+<meta property="og:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ROCKET IT — Partenaire Zoho Officiel Certifié">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="À propos — James Cauliez, fondateur ROCKET IT">
+<meta name="twitter:description" content="Ex-DSI international devenu Partenaire Zoho Officiel. 20 ans d'expérience IT au service des PME et ETI.">
+<meta name="twitter:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png?v=2">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#380140">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========== À PROPOS — VARIANTE E (Lavande Douce) ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #FAFAF7;
+  --bg-soft: #F2EFF5;
+  --bg-lavande: #ECEAF3;
+  --bg-card: #FFFFFF;
+  --bg-dark: #380140;
+  --violet: #380140;
+  --violet-soft: #5C2270;
+  --lavande: #C4C1D9;
+  --lavande-dark: #9B97B7;
+  --mint: #A0F2CC;
+  --mint-bg: #E8F8F0;
+  --mint-dark: #5DB89A;
+  --mint-darker: #1ABC9C;
+  --text: #1A1A1A;
+  --text-muted: #5C5C5C;
+  --text-light: #8A8A8A;
+  --border: rgba(56,1,64,0.1);
+  --border-lavande: rgba(196,193,217,0.6);
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --shadow-card: 0 4px 24px rgba(56,1,64,0.05);
+  --shadow-card-hover: 0 12px 40px rgba(56,1,64,0.1);
+  --shadow-violet: 0 8px 40px rgba(56,1,64,0.25);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --container: 1240px;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font-body); color: var(--text); background: var(--bg); line-height: 1.65; overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; color: var(--text); letter-spacing: 0.01em; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.75rem, 3.4vw, 2.4rem); }
+h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); }
+a { color: var(--violet); text-decoration: none; }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+
+/* Header */
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(250,250,247,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 2rem; }
+.logo { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+.logo-icon { height: 52px; width: auto; }
+.logo-text { display: flex; flex-direction: column; line-height: 1; }
+.logo-name { font-family: var(--font-display); font-weight: 700; font-size: 1.55rem; letter-spacing: 0.06em; color: var(--violet); }
+.logo-tagline { font-family: var(--font-body); font-size: 0.7rem; font-weight: 500; color: var(--lavande-dark); letter-spacing: 0.05em; margin-top: 0.2rem; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { color: var(--text); font-size: 0.9rem; font-weight: 500; padding: 0.4rem 0; border-bottom: 1px solid transparent; transition: all 0.3s var(--ease); }
+.nav-links a:hover, .nav-links a.active { color: var(--violet); border-bottom-color: var(--violet); }
+.zoho-badge-wrapper { display: flex; align-items: center; }
+.zoho-badge-wrapper img { height: 44px; display: block; filter: drop-shadow(0 2px 8px rgba(56,1,64,0.15)); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.95rem 1.85rem; font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: all 0.3s var(--ease); border: 1px solid transparent; text-decoration: none; }
+.btn-primary { background: var(--violet); color: var(--lavande); border-color: var(--violet); }
+.btn-primary:hover { background: var(--violet-soft); border-color: var(--violet-soft); transform: translateY(-2px); box-shadow: var(--shadow-violet); }
+.btn-secondary { background: transparent; color: var(--violet); border-color: var(--violet); }
+.btn-secondary:hover { background: var(--violet); color: var(--lavande); }
+.btn-arrow::after { content: '→'; transition: transform 0.3s var(--ease); }
+.btn-arrow:hover::after { transform: translateX(4px); }
+
+/* Page header */
+.page-header {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(180deg, var(--bg-lavande) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -20%; right: -10%;
+  width: 40vw; height: 60vh;
+  background: radial-gradient(circle, rgba(196,193,217,0.5) 0%, transparent 60%);
+  pointer-events: none;
+}
+.page-header-inner { position: relative; z-index: 1; }
+.section-label {
+  font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--violet); margin-bottom: 1rem;
+  display: inline-block; position: relative; padding-left: 2.5rem;
+}
+.section-label::before {
+  content: ''; position: absolute; left: 0; top: 50%;
+  width: 2rem; height: 1px; background: var(--violet);
+}
+/* Fix : pas de trait sur les sections centrées */
+.cta-section .section-label::before { display: none; }
+.cta-section .section-label { padding-left: 0; }
+.page-header h1 { margin-bottom: 1rem; }
+.page-header .lead {
+  font-size: 1.15rem; color: var(--text-muted); max-width: 60ch; line-height: 1.65;
+}
+
+/* Hero perso */
+.hero-perso {
+  padding: 4rem 0;
+}
+.hero-perso-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-perso-photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero-perso-photo img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 12px 48px rgba(56,1,64,0.18);
+}
+.hero-perso h2 {
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+.hero-perso-role {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--violet);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.hero-perso-bio {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.hero-perso-bio strong { color: var(--violet); font-weight: 600; }
+
+.quick-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+.quick-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.quick-info-label {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lavande-dark);
+}
+.quick-info-value {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* Story sections */
+.story-section {
+  padding: 4rem 0;
+}
+.story-alt {
+  background: var(--bg-soft);
+}
+.story-section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.story-section-header h2 { margin-bottom: 1rem; }
+.story-section-header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.story-section-header .section-label {
+  padding-left: 0;
+}
+.story-section-header .section-label::before {
+  display: none;
+}
+
+/* Timeline parcours */
+.timeline {
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--lavande) 0%, var(--violet) 100%);
+}
+.timeline-item {
+  position: relative;
+  padding-left: 90px;
+  padding-bottom: 3rem;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--violet);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  z-index: 1;
+  padding: 0.4rem;
+}
+.timeline-marker-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+.timeline-marker-label {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--violet);
+  font-weight: 700;
+  line-height: 1;
+}
+.timeline-content {
+  background: var(--bg-card);
+  padding: 1.75rem 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
+.timeline-period {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mint-darker);
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--violet);
+}
+.timeline-content h3 .company {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.85em;
+}
+.timeline-content p {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.timeline-tag {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem;
+  background: var(--bg-lavande);
+  color: var(--violet);
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+/* Approche / Valeurs */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.value-card {
+  background: var(--bg-card);
+  padding: 2rem 1.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s var(--ease);
+}
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--border-lavande);
+}
+.value-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--violet-soft));
+  color: var(--lavande);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+.value-card h3 {
+  font-size: 1.15rem;
+  color: var(--violet);
+  margin-bottom: 0.75rem;
+}
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+/* Why Zoho block */
+.why-zoho {
+  background: var(--violet);
+  color: var(--lavande);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.why-zoho::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 100%;
+  background: radial-gradient(circle at right top, rgba(196,193,217,0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+.why-zoho .container { position: relative; z-index: 1; }
+.why-zoho .section-label { color: var(--lavande); }
+.why-zoho .section-label::before { background: var(--lavande); }
+.why-zoho h2 { color: var(--lavande); margin-bottom: 1.25rem; }
+.why-zoho-text {
+  font-size: 1.1rem;
+  color: rgba(196,193,217,0.9);
+  line-height: 1.7;
+  max-width: 70ch;
+  margin-bottom: 1.25rem;
+}
+.why-zoho-text strong { color: #fff; font-weight: 600; }
+.why-zoho-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--mint);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(196,193,217,0.2);
+  border-bottom: 1px solid rgba(196,193,217,0.2);
+  margin: 2rem 0;
+  position: relative;
+  padding-left: 2rem;
+}
+.why-zoho-quote::before {
+  content: '"';
+  position: absolute;
+  left: 0; top: 0;
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--mint);
+  opacity: 0.5;
+}
+
+/* CTA final */
+.cta-section {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--bg);
+}
+.cta-section h2 { margin-bottom: 1rem; }
+.cta-section p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 50ch;
+  margin: 0 auto 2.5rem;
+}
+
+/* Footer */
+.site-footer { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding: 4rem 0 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+.footer-brand-logo img { height: 42px; }
+.footer-brand-logo span { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: 0.06em; color: #fff; }
+.footer-brand-text { font-size: 0.9rem; max-width: 30ch; margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); }
+.footer-zoho-badge { display: inline-block; }
+.footer-zoho-badge img { height: 54px; display: block; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
+.footer-col h4 { font-family: var(--font-display); font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mint); margin-bottom: 1.25rem; font-weight: 700; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.7rem; }
+.footer-col a { color: #fff; font-size: 0.95rem; font-weight: 400; transition: color 0.3s var(--ease); }
+.footer-col a:hover { color: var(--mint); }
+.footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(196,193,217,0.2); display: flex; justify-content: space-between; font-size: 0.85rem; flex-wrap: wrap; gap: 0.5rem; color: rgba(255,255,255,0.7); }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .hero-perso-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+  .hero-perso-photo img { max-width: 280px; margin: 0 auto; }
+  .hero-perso-photo::before { display: none; }
+  .quick-info { grid-template-columns: repeat(2, 1fr); }
+  .timeline::before { left: 25px; }
+  .timeline-item { padding-left: 70px; }
+  .timeline-marker { width: 52px; height: 52px; padding: 0.25rem; }
+  .timeline-marker-icon { font-size: 1.1rem; margin-bottom: 0.1rem; }
+  .timeline-marker-label { font-size: 0.5rem; letter-spacing: 0.05em; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .logo-name { font-size: 1.2rem; }
+  .logo-icon { height: 42px; }
+  .logo-tagline { display: none; }
+  .quick-info { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .timeline-content { padding: 1.25rem 1.25rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.rocket-it.fr/a-propos.html#person",
+      "name": "James Cauliez",
+      "jobTitle": "Président, Fondateur de ROCKET IT",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "ROCKET IT",
+        "url": "https://www.rocket-it.fr/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "Seiko"},
+        {"@type": "Organization", "name": "Vetoquinol"},
+        {"@type": "Organization", "name": "Wienerberger"},
+        {"@type": "Organization", "name": "NEVEN / ABC Téléphonie"}
+      ],
+      "knowsAbout": [
+        "Zoho One", "Zoho CRM", "Direction des Systèmes d'Information",
+        "Transformation digitale", "Intégration logicielle", "Gestion de projet IT",
+        "Architecture SI", "Conseil stratégique", "Intelligence Artificielle"
+      ],
+      "knowsLanguage": ["fr", "en"],
+      "nationality": "FR",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Besançon",
+        "addressCountry": "FR"
+      },
+      "description": "Ex-DSI international devenu Partenaire Zoho Officiel. 20 ans d'expérience IT au service des PME et ETI."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.rocket-it.fr/"},
+        {"@type": "ListItem", "position": 2, "name": "À propos", "item": "https://www.rocket-it.fr/a-propos.html"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/fusee-violet.webp" alt="" class="logo-icon">
+        <div class="logo-text">
+          <span class="logo-name">ROCKET IT</span>
+          <span class="logo-tagline">Propulsez votre transformation digitale</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="avis.html">Avis clients</a></li>
+        <li><a href="a-propos.html" class="active">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="zoho-badge-wrapper"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <span class="section-label">Qui suis-je ?</span>
+        <h1>20 ans de DSI<br>au service de votre transformation.</h1>
+        <p class="lead">
+          Ancien Directeur des Systèmes d'Information dans des groupes internationaux. Aujourd'hui consultant indépendant, je mets cette expérience au service des PME et ETI qui veulent faire de Zoho un véritable levier de croissance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO PERSO -->
+  <section class="hero-perso">
+    <div class="container">
+      <div class="hero-perso-grid">
+        <div class="hero-perso-photo">
+          <img src="assets/james-portrait.webp" alt="James Cauliez, fondateur de ROCKET IT, expert Zoho et ancien DSI">
+        </div>
+        <div>
+          <div class="hero-perso-role">James CAULIEZ · Fondateur</div>
+          <h2>Une double vision : stratégique et opérationnelle.</h2>
+          <p class="hero-perso-bio">
+            J'ai passé <strong>plus de 20 ans</strong> dans la direction des systèmes d'information : du terrain à la stratégie, de l'administration réseau à la table du CODIR. Cette double culture — <strong>technique et business</strong> — est ce qui distingue ROCKET IT d'un simple intégrateur Zoho.
+          </p>
+          <p class="hero-perso-bio">
+            Je ne me contente pas de paramétrer un outil. Je <strong>cherche à comprendre votre métier</strong>, vos enjeux et votre rythme. C'est ce qui me permet de proposer une solution qui fonctionne aussi bien sur le papier que dans la réalité de vos équipes.
+          </p>
+
+          <div class="quick-info">
+            <div class="quick-info-item">
+              <span class="quick-info-label">Bases géographiques</span>
+              <span class="quick-info-value">Besançon · Lyon · Drôme/Ardèche</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Zone d'intervention</span>
+              <span class="quick-info-value">Toute la France &amp; international</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Expérience IT</span>
+              <span class="quick-info-value">+ 20 ans</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="quick-info-label">Expertise Zoho</span>
+              <span class="quick-info-value">7 ans · Partenaire certifié</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE PARCOURS -->
+  <section class="story-section story-alt">
+    <div class="container">
+      <div class="story-section-header">
+        <span class="section-label">Mon parcours</span>
+        <h2>Du terrain à la table du CODIR.</h2>
+        <p>Vingt années passées à concevoir, déployer et piloter des systèmes d'information dans des contextes très différents — de la PME française au groupe japonais coté en bourse.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-marker-icon">🚀</span>
+            <span class="timeline-marker-label">Zoho</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">Depuis 2025 · Aujourd'hui</div>
+            <h3>Fondateur & Consultant Expert Zoho <span class="company">— ROCKET IT</span></h3>
+            <p>Création de ROCKET IT, structure indépendante dédiée à l'intégration Zoho One pour les PME et ETI. Approche audit-first, accompagnement de bout en bout : analyse, paramétrage, formation, support. Partenaire Officiel Zoho certifié.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Zoho One</span>
+              <span class="timeline-tag">Transformation digitale</span>
+              <span class="timeline-tag">PME / ETI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-marker-icon">📡</span>
+            <span class="timeline-marker-label">Télécom</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2019 – 2024 · Direction des SI</div>
+            <h3>Directeur des Systèmes d'Information <span class="company">— Groupe NEVEN, Télécoms multisites</span></h3>
+            <p>PME de 130 collaborateurs, 22M€ de CA, plusieurs sites en France, membre du CODIR. <strong>Déploiement complet de la suite Zoho One</strong> sur l'ensemble de l'entreprise — bien au-delà du CRM. Migration ERP complète, refonte de l'infrastructure IT, conduite du changement, programme de formations, pilotage du budget et management de l'équipe IT.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Zoho CRM</span>
+              <span class="timeline-tag">Desk</span>
+              <span class="timeline-tag">Books</span>
+              <span class="timeline-tag">Inventory</span>
+              <span class="timeline-tag">Analytics</span>
+              <span class="timeline-tag">WorkDrive</span>
+              <span class="timeline-tag">Cliq</span>
+              <span class="timeline-tag">Learn</span>
+              <span class="timeline-tag">Sign</span>
+              <span class="timeline-tag">Membre CODIR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-marker-icon">💊</span>
+            <span class="timeline-marker-label">Pharma</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2019 · Pharmaceutique</div>
+            <h3>IT Group Infrastructure Manager <span class="company">— Vetoquinol</span></h3>
+            <p>Laboratoire pharmaceutique, 2 500 collaborateurs, 530M€ de CA, filiales dans 24 pays. Management de 32 collaborateurs, définition de l'architecture IT pour les nouvelles filiales du Groupe, politique home office.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">32 collaborateurs</span>
+              <span class="timeline-tag">24 pays</span>
+              <span class="timeline-tag">Architecture IT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-marker-icon">⌚</span>
+            <span class="timeline-marker-label">Luxe</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2010 – 2019 · Horlogerie japonaise</div>
+            <h3>IT Manager France & Italie <span class="company">— Groupe Seiko</span></h3>
+            <p>Manufacture horlogère japonaise, 13 500 collaborateurs, 1,8 milliard € de CA, membre du CODIR France. Transformation digitale complète et refonte du SI après audit. Virtualisation VMware, migration vers Office 365, déploiement d'outils de mobilité, refonte de la chaîne logistique. Reporting groupe au Japon.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Transformation digitale</span>
+              <span class="timeline-tag">Multi-sites</span>
+              <span class="timeline-tag">International</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-marker-icon">🧱</span>
+            <span class="timeline-marker-label">BTP</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">2004 – 2009 · Industrie</div>
+            <h3>Administrateur Réseaux & Systèmes <span class="company">— Groupe Wienerberger</span></h3>
+            <p>Premier briquetier mondial et premier tuilier européen, 16 000 collaborateurs, 2,65 Md€ de CA. Pilotage de projets multi-sites, migration ERP de Movex vers SAP R3, collaboration avec les équipes IT internationales du groupe.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Migration SAP</span>
+              <span class="timeline-tag">Multi-sites</span>
+              <span class="timeline-tag">Équipes internationales</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-section-header">
+        <span class="section-label">Mon approche</span>
+        <h2>Ce qui distingue ROCKET IT.</h2>
+        <p>Une méthode qui n'est ni du conseil pur, ni de la simple intégration technique. Un mélange des deux, hérité de 20 ans de direction des SI.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>L'audit avant la prescription</h3>
+          <p>Avant de configurer quoi que ce soit, je passe du temps à comprendre votre métier, vos process, vos contraintes. Trop d'intégrateurs vendent une solution avant d'avoir posé les bonnes questions.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">👁️</div>
+          <h3>Vision long terme</h3>
+          <p>Un CRM bien configuré aujourd'hui mais qui ne tiendra pas la croissance dans 18 mois, c'est un mauvais investissement. Je conçois des architectures Zoho qui évoluent avec votre entreprise.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">🔗</div>
+          <h3>Double culture technique & métier</h3>
+          <p>Ancien DSI passé par le CODIR, je parle aussi bien aux dirigeants qu'aux développeurs. Ce qui évite les déperditions entre la vision business et la réalité technique.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h3>Réactivité avant tout</h3>
+          <p>Une question, un blocage, une évolution ? Réponse sous 24h ouvrées garantie. La réactivité est la première chose que mes clients soulignent dans leurs recommandations.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Engagement contractuel clair</h3>
+          <p>Contrats de service formels, garantie corrective de 30 jours, RC Pro de 8M€. Vous savez exactement à quoi vous attendre, sans mauvaise surprise.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">🌍</div>
+          <h3>Interlocuteur unique — français &amp; anglais</h3>
+          <p>Pas de chaîne d'intermédiaires ni de support offshore. Vous discutez directement avec celui qui paramètre votre Zoho. <strong>Anglais C1</strong> validé par 20 ans en groupes internationaux : nous accompagnons aussi vos filiales étrangères et vos équipes anglophones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI ZOHO -->
+  <section class="why-zoho">
+    <div class="container">
+      <span class="section-label">Pourquoi Zoho ?</span>
+      <h2>De la liberté d'éditeur à la suite intégrée.</h2>
+      <p class="why-zoho-text">
+        Pendant 20 ans, j'ai vu défiler les SI : SAP, Office 365, des dizaines de SaaS empilés sans cohérence. Le résultat ? Des silos, des coûts qui explosent, et des utilisateurs perdus.
+      </p>
+      <p class="why-zoho-text">
+        Quand j'ai découvert <strong>Zoho One</strong>, j'ai vu ce que je cherchais sans le savoir : <strong>une seule suite</strong> pour gérer une entreprise dans son intégralité, à un tarif imbattable, sans dépendre de plus 10 fournisseurs. Et un éditeur indépendant qui investit massivement en R&D depuis 25 ans, avec des datacenters européens conformes RGPD.
+      </p>
+      <blockquote class="why-zoho-quote">
+        Mon métier n'est pas de vous vendre du Zoho. C'est de vous donner la maîtrise de vos données et de vos process — avec un outil qui grandit avec vous.
+      </blockquote>
+      <p class="why-zoho-text">
+        C'est cette philosophie qui m'a poussé à devenir Partenaire Officiel Zoho et à fonder <span style="white-space:nowrap;">ROCKET IT</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label" style="padding-left:0;">Parlons projet</span>
+      <h2>Discutons de votre transformation digitale.</h2>
+      <p>30 minutes pour comprendre vos enjeux, sans engagement. Que vous démarriez ou que vous ayez déjà du Zoho à optimiser.</p>
+      <a href="contact.html" class="btn btn-primary btn-arrow">Consultation gratuite</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><img src="assets/fusee-lavande.webp" alt=""><span>ROCKET IT</span></div>
+        <p class="footer-brand-text">Partenaire Zoho Officiel certifié. Intégration, paramétrage, formation et support pour PME et ETI exigeantes.</p>
+        <div class="footer-zoho-badge"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="avis.html">Avis clients</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+      <div class="footer-col"><h4>Ressources</h4><ul><li><a href="statut-zoho.html">Statut serveurs Zoho</a></li><li><a href="realisations.html">Études de cas</a></li><li><a href="https://store.zoho.eu/ResellerCustomerSignUp.do?id=23485ec546ddc9b73a7d4bac2358c5e1&amp;locale=fr" target="_blank" rel="noopener noreferrer" class="footer-trial-mini">Essai gratuit Zoho 🚀</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@rocket-it.fr">📧 contact@rocket-it.fr</a></li><li><a href="contact.html">📅 Consultation gratuite</a></li><li class="contact-bases">🌍 Toute la France &amp; international</li><li class="contact-bases">📍 Besançon · Lyon · Drôme/Ardèche</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ROCKET IT 🚀 — Tous droits réservés</span>
+      <span class="footer-legal-links"><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
