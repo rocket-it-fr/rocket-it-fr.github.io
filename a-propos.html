@@ -134,6 +134,9 @@ a { color: var(--violet); text-decoration: none; }
 /* Fix : pas de trait sur les sections centrées */
 .cta-section .section-label::before { display: none; }
 .cta-section .section-label { padding-left: 0; }
+/* Désactive automatiquement le trait sur tous les labels avec padding-left:0 inline */
+.section-label[style*="padding-left:0"]::before,
+.section-label[style*="padding-left: 0"]::before { display: none; }
 .page-header h1 { margin-bottom: 1rem; }
 .page-header .lead {
   font-size: 1.15rem; color: var(--text-muted); max-width: 60ch; line-height: 1.65;

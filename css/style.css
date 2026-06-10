@@ -118,6 +118,12 @@ section.section:has(+ section.partner-trial-section) {
 .partner-trial-section .section-label::before { display: none; }
 .cta-section .section-label,
 .partner-trial-section .section-label { padding-left: 0; }
+
+/* Désactive automatiquement le trait ::before sur tous les labels avec padding-left:0 inline */
+.section-label[style*="padding-left:0"]::before,
+.section-label[style*="padding-left: 0"]::before {
+  display: none;
+}
 .section-header h2 { margin-bottom: 1rem; }
 .section-header p { color: var(--text-muted); font-size: 1.05rem; max-width: 60ch; margin: 0 auto; }
 
