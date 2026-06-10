@@ -220,7 +220,7 @@ a.contact-value:hover { color: var(--violet-soft); }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-links { position: fixed; top: 71px; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border); transform: translateY(-150%); transition: transform 0.4s var(--ease); gap: 1.5rem; z-index: 99; }
   .nav-links.open { transform: translateY(0); }
   .burger { display: flex; }

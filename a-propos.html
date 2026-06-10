@@ -475,7 +475,7 @@ a { color: var(--violet); text-decoration: none; }
 .burger.active span:nth-child(2) { opacity: 0; }
 .burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-links { position: fixed; top: 71px; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border); transform: translateY(-150%); transition: transform 0.4s var(--ease); gap: 1.5rem; z-index: 99; }
   .nav-links.open { transform: translateY(0); }
   .burger { display: flex; }
@@ -557,6 +557,7 @@ a { color: var(--violet); text-decoration: none; }
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="zoho-badge-wrapper"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
   </div>
 </header>
@@ -823,5 +824,6 @@ a { color: var(--violet); text-decoration: none; }
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
