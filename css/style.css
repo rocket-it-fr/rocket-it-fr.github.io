@@ -248,12 +248,12 @@ a.card:hover::after { opacity: 1; transform: translateX(0); }
   .nav-links { position: fixed; top: 71px; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border); transform: translateY(-150%); transition: transform 0.4s var(--ease); gap: 1.5rem; z-index: 99; }
   .nav-links.open { transform: translateY(0); }
   .burger { display: flex; }
-  .logo-tagline { display: none; }
   .zoho-badge-wrapper { display: none; }
 }
 @media (max-width: 720px) {
   .logo-name { font-size: 1.2rem; }
   .logo-icon { height: 42px; }
+  .logo-tagline { font-size: 0.6rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .partner-strip-inner { gap: 1.5rem; }
