@@ -3,7 +3,7 @@
 > **Site officiel ROCKET IT** — Partenaire Zoho Officiel Certifié  
 > Document de synthèse technique pour reprise / évolution du projet
 
-**Dernière mise à jour** : 11 juin 2026 (v1.4)  
+**Dernière mise à jour** : 11 juin 2026 (v1.5)  
 **URL de production** : https://www.rocket-it.fr/  
 **Repo GitHub** : https://github.com/rocket-it-fr/rocket-it-fr.github.io  
 **Statut** : 🟢 EN PRODUCTION
@@ -611,6 +611,11 @@ dig @nsa.n0c.com www.rocket-it.fr +short  # Serveur source PlanetHoster
 - **CSS local a-propos.html aligné** : `.page-header` et `.logo-tagline` (couleur `--violet-soft` + font-weight 600) alignés sur le standard du site
 - **Media query mobile 600px** : ajout d'un breakpoint dédié hero pour aligner les 3 CTAs à la même largeur (360px max) sur smartphone — tous stackés en colonne, `align-items: stretch` sur `.hero-cta-group` mobile
 - **Fix CSS cascade** : déplacement du media query mobile en fin de fichier pour éviter que les règles de base écrasent les overrides mobile (à spécificité égale, c'est l'ordre qui gagne)
+
+### v1.5 — Juin 2026 (fixes nav iPad + baseline mobile)
+- **Fix bug nav a-propos sur iPad Pro 11" landscape (1194px)** : ajout du media query `1300px` manquant dans le CSS local de `a-propos.html` (nav compacte font 0.82rem, gaps réduits, badge Zoho 36px) — alignement avec le standard de `style.css`
+- **Baseline "Propulsez votre transformation digitale" gardée visible sur mobile** : retrait de `.logo-tagline { display: none; }` du media 1100px dans `style.css` et `a-propos.html` — la baseline reste affichée à toutes les tailles
+- **Font-size baseline réduite sur mobile** : ajout de `.logo-tagline { font-size: 0.6rem; }` dans le media 720px pour qu'elle tienne confortablement sous ROCKET IT sur smartphone (iPhone 15 Pro testé OK)
 
 ---
 
