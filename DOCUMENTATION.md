@@ -3,7 +3,7 @@
 > **Site officiel ROCKET IT** — Partenaire Zoho Officiel Certifié  
 > Document de synthèse technique pour reprise / évolution du projet
 
-**Dernière mise à jour** : 10 juin 2026 (v1.3)  
+**Dernière mise à jour** : 11 juin 2026 (v1.4)  
 **URL de production** : https://www.rocket-it.fr/  
 **Repo GitHub** : https://github.com/rocket-it-fr/rocket-it-fr.github.io  
 **Statut** : 🟢 EN PRODUCTION
@@ -149,13 +149,16 @@ rocket-it-fr.github.io/
 
 | Plage | Comportement |
 |---|---|
-| **< 720px** | Mobile : burger menu, layout 1 colonne |
+| **< 600px** | Hero : les 3 CTAs (2 boutons + partner-link) alignés à la même largeur (360px max) en colonne |
+| **< 720px** | Mobile : burger menu, layout 1 colonne, padding hero réduit |
 | **720-960px** | Tablet portrait : burger menu, grilles 2 colonnes |
 | **960-1100px** | iPad portrait + petits écrans : burger menu, layouts intermédiaires |
 | **1100-1300px** | **Nav horizontale COMPACTE** : font 0.82rem, gaps réduits, badge Zoho 36px |
 | **> 1300px** | Nav horizontale normale (taille pleine), grilles desktop |
 
-**Décision design clé** : breakpoint burger à **1100px** (au lieu de 900px initialement) pour que tous les iPads en portrait passent en burger, et qu'il y ait toujours assez de place pour les 6 items du menu sur tablette landscape (iPad Pro 11" = 1194px).
+**Décisions design clés** :
+- Breakpoint burger à **1100px** (au lieu de 900px initialement) pour que tous les iPads en portrait passent en burger, et qu'il y ait toujours assez de place pour les 6 items du menu sur tablette landscape (iPad Pro 11" = 1194px).
+- Breakpoint hero CTAs à **600px** (v1.4) pour aligner les 3 éléments à la même largeur sur smartphone — déclaré à la fin du CSS pour bonne cascade.
 
 ---
 
@@ -597,6 +600,17 @@ dig @nsa.n0c.com www.rocket-it.fr +short  # Serveur source PlanetHoster
 - Règle CSS universelle pour désactiver `::before` sur tous labels centrés (`[style*="padding-left:0"]`)
 - Espace réduit entre CTAs hero et lien partenaire (64px → 20px)
 - **Retrait du nombre d'avis du SEO** : title, OG/Twitter descriptions, et bloc `aggregateRating` du JSON-LD supprimés sur avis.html et index.html — zéro maintenance future
+- **Hero ratio rééquilibré** : `grid-template-columns` du hero passé de `1.3fr 1fr` (56/44) à `2.3fr 1fr` (70/30) — le H1 fait 2-3 lignes au lieu de 4, fusée plus discrète comme élément décoratif
+
+### v1.4 — Juin 2026 (refonte UX hero + harmonisation dégradés)
+- **H1 font-size réduite** : `clamp(2.25rem, 5vw, 3.75rem)` → `clamp(2.25rem, 4.5vw, 3.4rem)` — passe de 4 à 3 lignes sur grands écrans (60px → 54px max)
+- **Nouveau wrapper `.hero-actions`** : regroupe les 2 boutons CTA + partner-link dans un même conteneur pour une hiérarchie d'action claire
+- **Partner-link refondu** : `max-width: 320px`, `border-radius: 14px` (rectangle arrondi au lieu de pilule), `font-size: 0.88rem`, `line-height: 1.4` → tient sur 2 lignes proprement, plus discret comme lien tertiaire
+- **Dégradé hero refait** : remplacement du halo radial brutal (`radial-gradient` ponctuel haut-droite) par un dégradé linéaire diagonal continu (135°) crème → lavande pâle — plus de coupure visible sur le responsive
+- **Dégradé `.page-header` uniformisé** : même style diagonal que le hero appliqué à toutes les autres pages (services, avis, contact, etc.) — cohérence visuelle complète
+- **CSS local a-propos.html aligné** : `.page-header` et `.logo-tagline` (couleur `--violet-soft` + font-weight 600) alignés sur le standard du site
+- **Media query mobile 600px** : ajout d'un breakpoint dédié hero pour aligner les 3 CTAs à la même largeur (360px max) sur smartphone — tous stackés en colonne, `align-items: stretch` sur `.hero-cta-group` mobile
+- **Fix CSS cascade** : déplacement du media query mobile en fin de fichier pour éviter que les règles de base écrasent les overrides mobile (à spécificité égale, c'est l'ordre qui gagne)
 
 ---
 
