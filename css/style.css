@@ -263,13 +263,6 @@ a.card:hover::after { opacity: 1; transform: translateX(0); }
   .form-row { grid-template-columns: 1fr; }
   .contact-form { padding: 1.75rem; }
 }
-@media (max-width: 600px) {
-  /* Hero: aligner les 3 éléments à la même largeur sur mobile */
-  .hero-actions { width: 100%; max-width: 360px; }
-  .hero-cta-group { flex-direction: column; align-items: stretch; gap: 0.75rem; }
-  .hero-cta-group .btn { width: 100%; justify-content: center; }
-  .hero-partner-link { width: 100%; max-width: none; }
-}
 @media (max-width: 380px) { .hero-visual { max-width: 180px; } .recaptcha-wrapper .g-recaptcha { transform: scale(0.88); } }
 
 /* === LIEN PARTENAIRE ZOHO === */
@@ -389,3 +382,12 @@ a.card:hover::after { opacity: 1; transform: translateX(0); }
 /* Liens légaux dans le footer-bottom */
 .footer-legal-links a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s var(--ease); }
 .footer-legal-links a:hover { color: var(--mint); }
+
+
+/* === MOBILE : aligner les 3 éléments du hero à la même largeur === */
+@media (max-width: 600px) {
+  .hero-actions { width: 100%; max-width: 360px; }
+  .hero-cta-group { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+  .hero-cta-group .btn { width: 100%; justify-content: center; }
+  .hero-partner-link { width: 100%; max-width: none; box-sizing: border-box; }
+}
