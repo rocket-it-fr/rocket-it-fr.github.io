@@ -109,16 +109,16 @@ a { color: var(--violet); text-decoration: none; }
 /* Page header */
 .page-header {
   padding: 2rem 0 2rem;
-  background: linear-gradient(180deg, var(--bg-lavande) 0%, var(--bg) 100%);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream) 35%, rgba(196,193,217,0.18) 75%, rgba(196,193,217,0.32) 100%);
   position: relative;
   overflow: hidden;
 }
 .page-header::before {
   content: '';
   position: absolute;
-  top: -20%; right: -10%;
-  width: 40vw; height: 60vh;
-  background: radial-gradient(circle, rgba(196,193,217,0.5) 0%, transparent 60%);
+  top: 0; right: 0;
+  width: 35vw; height: 100%;
+  background: radial-gradient(ellipse at top right, rgba(196,193,217,0.25) 0%, transparent 70%);
   pointer-events: none;
 }
 .page-header-inner { position: relative; z-index: 1; }
