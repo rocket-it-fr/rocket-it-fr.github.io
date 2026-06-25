@@ -303,5 +303,12 @@
   <!-- JS principal -->
   <script src="/js/main.js"></script>
 
+  <!-- Force sortie iframe si chargée dans Zoho Bookings embed -->
+  <script>
+    if (window.self !== window.top) {
+      window.top.location.href = 'https://www.rocket-it.fr/merci-rdv.html';
+    }
+  </script>
+
 </body>
 </html>
