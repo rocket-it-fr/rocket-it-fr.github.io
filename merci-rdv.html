@@ -1,314 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, follow">
-  <title>Rendez-vous confirmé — ROCKET IT</title>
-  <meta name="description" content="Votre rendez-vous avec ROCKET IT est confirmé. Vous recevrez un email de confirmation avec les détails.">
-  <link rel="canonical" href="https://www.rocket-it.fr/merci-rdv.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendez-vous confirmé | ROCKET IT</title>
+<meta name="description" content="Votre rendez-vous avec ROCKET IT est confirmé. Vous recevrez un email de confirmation avec les détails.">
+<meta name="keywords" content="rocket it, rendez-vous confirmé">
+<meta name="author" content="James Cauliez, ROCKET IT">
+<meta name="language" content="French">
+<meta name="geo.region" content="FR-25">
+<meta name="geo.placename" content="Besançon, France">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.rocket-it.fr/merci-rdv.html">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="ROCKET IT">
-  <meta property="og:url" content="https://www.rocket-it.fr/merci-rdv.html">
-  <meta property="og:title" content="Rendez-vous confirmé — ROCKET IT">
-  <meta property="og:description" content="Votre rendez-vous avec ROCKET IT est confirmé.">
-  <meta property="og:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="ROCKET IT">
+<meta property="og:url" content="https://www.rocket-it.fr/merci-rdv.html">
+<meta property="og:title" content="Rendez-vous confirmé | ROCKET IT">
+<meta property="og:description" content="Votre rendez-vous avec ROCKET IT est confirmé.">
+<meta property="og:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ROCKET IT — Partenaire Zoho Officiel Certifié">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rendez-vous confirmé | ROCKET IT">
+<meta name="twitter:description" content="Votre rendez-vous avec ROCKET IT est confirmé.">
+<meta name="twitter:image" content="https://www.rocket-it.fr/assets/og-rocket-it.jpg">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Theme color mobile -->
-  <meta name="theme-color" content="#380140">
-
-  <!-- Stylesheet partagé -->
-  <link rel="stylesheet" href="/css/style.css">
-
-  <style>
-    /* Styles spécifiques à la page merci-rdv */
-    .merci-section {
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 1.5rem;
-    }
-
-    .merci-card {
-      background: var(--bg-card);
-      border-radius: 24px;
-      box-shadow: var(--shadow-card);
-      padding: 3rem 2.5rem;
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
-      border: 1px solid var(--border);
-    }
-
-    .merci-icon {
-      width: 80px;
-      height: 80px;
-      background: var(--mint-bg);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      font-size: 2.5rem;
-    }
-
-    .merci-eyebrow {
-      display: inline-block;
-      background: var(--mint-bg);
-      color: var(--mint-darker);
-      font-family: var(--font-display);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.35rem 1rem;
-      border-radius: 100px;
-      margin-bottom: 1rem;
-    }
-
-    .merci-card h1 {
-      font-family: var(--font-display);
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 700;
-      color: var(--violet);
-      margin-bottom: 1rem;
-      line-height: 1.3;
-    }
-
-    .merci-card p {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-
-    .merci-card p strong {
-      color: var(--text);
-    }
-
-    .merci-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 1.75rem 0;
-    }
-
-    .merci-next {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .merci-next strong {
-      color: var(--text);
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 0.95rem;
-    }
-
-    .merci-steps {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 2rem;
-      text-align: left;
-    }
-
-    .merci-steps li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .merci-steps li:last-child {
-      border-bottom: none;
-    }
-
-    .merci-steps li .step-icon {
-      font-size: 1.1rem;
-      flex-shrink: 0;
-      margin-top: 0.05rem;
-    }
-
-    .merci-actions {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 480px) {
-      .merci-card {
-        padding: 2rem 1.25rem;
-      }
-      .merci-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-    }
-  </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png?v=2">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#380140">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.thanks-section { min-height: calc(100vh - 200px); display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 0; }
+.thanks-icon { width: 96px; height: 96px; margin: 0 auto 2rem; border: 2px solid var(--violet); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; background: var(--bg-card); }
+.thanks-icon::after { content: '✓'; font-family: var(--font-display); font-size: 3rem; color: var(--violet); line-height: 1; }
+.thanks-section h1 { margin-bottom: 1.25rem; }
+.thanks-lead { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 2.5rem; line-height: 1.65; max-width: 50ch; margin-left: auto; margin-right: auto; }
+.next-steps { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2.5rem auto; text-align: left; max-width: 640px; box-shadow: var(--shadow-card); }
+.next-steps h2 { font-size: 1rem; font-family: var(--font-display); letter-spacing: 0.15em; text-transform: uppercase; color: var(--violet); margin-bottom: 1.25rem; }
+.next-steps ol { list-style: none; counter-reset: steps; padding: 0; }
+.next-steps li { counter-increment: steps; padding: 0.85rem 0 0.85rem 3rem; position: relative; color: var(--text); border-bottom: 1px solid var(--border); }
+.next-steps li:last-child { border-bottom: none; }
+.next-steps li::before { content: counter(steps, decimal-leading-zero); position: absolute; left: 0; top: 0.85rem; font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--violet); }
+.thanks-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+</style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo-link" aria-label="ROCKET IT — Accueil">
-        <img src="/assets/fusee-violet.webp" alt="Logo ROCKET IT" class="logo-img" width="36" height="36">
-        <div class="logo-text">
-          <span class="logo-name">ROCKET IT</span>
-          <span class="logo-tagline">Propulsez votre transformation digitale</span>
-        </div>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/fusee-violet.webp" alt="" class="logo-icon">
+        <div class="logo-text"><span class="logo-name">ROCKET&nbsp;IT</span><span class="logo-tagline">Propulsez votre transformation digitale</span></div>
       </a>
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="/pourquoi-zoho.html">Pourquoi Zoho ?</a>
-        <a href="/services.html">Services</a>
-        <a href="/realisations.html">Réalisations</a>
-        <a href="/avis.html">Avis</a>
-        <a href="/a-propos.html">À propos</a>
-        <a href="/contact.html" class="nav-cta">Prendre RDV</a>
-        <div class="zoho-badge-wrapper">
-          <a href="https://www.zoho.com/fr/authorized-partner/rocket-it.html" target="_blank" rel="noopener noreferrer" aria-label="Partenaire Officiel Zoho">
-            <img src="/assets/zoho-authorized-partner-horizontal.webp" alt="Zoho Authorized Partner" class="zoho-badge" width="120" height="36">
-          </a>
-        </div>
-      </nav>
-      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+      <ul class="nav-links">
+        <li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="avis.html">Avis clients</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="zoho-badge-wrapper"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
 
-  <!-- CONTENU PRINCIPAL -->
-  <main>
-    <section class="merci-section">
-      <div class="merci-card">
+<main>
+  <section class="thanks-section">
+    <div class="container">
+      <div class="thanks-icon" aria-hidden="true"></div>
+      <h1>Rendez-vous confirmé.</h1>
+      <p class="thanks-lead">Votre rendez-vous est bien enregistré.<br>Un <strong style="color:var(--violet);">email de confirmation</strong> vous a été envoyé avec tous les détails.</p>
 
-        <div class="merci-icon">📅</div>
-
-        <span class="merci-eyebrow">Rendez-vous confirmé</span>
-
-        <h1>Votre rendez-vous est bien enregistré !</h1>
-
-        <p>
-          Merci pour votre confiance. <strong>Un email de confirmation vous a été envoyé</strong> avec tous les détails de votre rendez-vous.
-        </p>
-
-        <hr class="merci-divider">
-
-        <p class="merci-next">
-          <strong>Ce qui va se passer maintenant :</strong>
-        </p>
-
-        <ul class="merci-steps">
-          <li>
-            <span class="step-icon">📧</span>
-            <span>Vérifiez votre boîte mail — vous y trouverez la confirmation avec la date, l'heure et les coordonnées de votre interlocuteur.</span>
-          </li>
-          <li>
-            <span class="step-icon">📋</span>
-            <span>Pour préparer au mieux notre échange, notez les modules Zoho que vous utilisez déjà (ou souhaitez déployer) et vos principaux enjeux métier.</span>
-          </li>
-          <li>
-            <span class="step-icon">📞</span>
-            <span>Votre interlocuteur ROCKET IT vous appellera à la date et l'heure convenues.</span>
-          </li>
-        </ul>
-
-        <div class="merci-actions">
-          <a href="/" class="btn btn-secondary">← Retour à l'accueil</a>
-          <a href="/services.html" class="btn btn-primary">Découvrir nos services</a>
-        </div>
-
+      <div class="next-steps">
+        <h2>La suite</h2>
+        <ol>
+          <li>Vérifiez votre boîte mail — vous y trouverez la date, l'heure et les coordonnées de votre interlocuteur.</li>
+          <li>Pour préparer au mieux notre échange, notez les modules Zoho que vous utilisez déjà (ou souhaitez déployer) et vos principaux enjeux métier.</li>
+          <li>Votre interlocuteur ROCKET IT vous appellera à la date et l'heure convenues.</li>
+        </ol>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="logo-link footer-logo" aria-label="ROCKET IT — Accueil">
-          <img src="/assets/fusee-lavande.webp" alt="Logo ROCKET IT" class="logo-img" width="32" height="32">
-          <span class="logo-name">ROCKET IT</span>
-        </a>
-        <p class="footer-desc">Partenaire Officiel Certifié Zoho. Conseil, intégration et formation pour PME et ETI.</p>
-        <a href="https://www.zoho.com/fr/authorized-partner/rocket-it.html" target="_blank" rel="noopener noreferrer" aria-label="Partenaire Officiel Zoho">
-          <img src="/assets/zoho-authorized-partner-horizontal.webp" alt="Zoho Authorized Partner" class="footer-zoho-badge" width="110" height="33">
-        </a>
-      </div>
-      <nav class="footer-nav" aria-label="Navigation secondaire">
-        <h3 class="footer-heading">Navigation</h3>
-        <ul>
-          <li><a href="/pourquoi-zoho.html">Pourquoi Zoho ?</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/realisations.html">Réalisations</a></li>
-          <li><a href="/avis.html">Avis clients</a></li>
-          <li><a href="/a-propos.html">À propos</a></li>
-          <li><a href="/contact.html">Contact & RDV</a></li>
-        </ul>
-      </nav>
-      <div class="footer-ressources">
-        <h3 class="footer-heading">Ressources</h3>
-        <ul>
-          <li><a href="/statut-zoho.html">Statut Zoho</a></li>
-          <li>
-            <a href="https://www.zoho.com/fr/zoho-one/free-trial.html" target="_blank" rel="noopener noreferrer" class="footer-trial-mini">
-              Essai Zoho gratuit →
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
-        <ul>
-          <li class="contact-bases">🌍 France entière</li>
-          <li class="contact-bases">📍 Siège : Besançon (25)</li>
-          <li><a href="mailto:contact@rocket-it.fr">contact@rocket-it.fr</a></li>
-          <li><a href="/contact.html">Prendre rendez-vous</a></li>
-        </ul>
+      <div class="thanks-actions">
+        <a href="index.html" class="btn btn-secondary">Retour à l'accueil</a>
+        <a href="services.html" class="btn btn-primary btn-arrow">Découvrir nos services</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <span>© <span id="footer-year"></span> ROCKET IT — SASU. Tous droits réservés.</span>
-        <span class="footer-legal-links">
-          <a href="/mentions-legales.html">Mentions légales</a>
-          <span aria-hidden="true">·</span>
-          <a href="/politique-confidentialite.html">Politique de confidentialité</a>
-        </span>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo"><img src="assets/fusee-lavande.webp" alt=""><span>ROCKET&nbsp;IT</span></div>
+        <p class="footer-brand-text">Partenaire Zoho Officiel certifié. Intégration, paramétrage, formation et support pour PME et ETI exigeantes.</p>
+        <div class="footer-zoho-badge"><img src="assets/zoho-authorized-partner-horizontal.webp" alt="ROCKET IT - Partenaire Zoho Officiel Certifié (Authorized Partner)"></div>
       </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="pourquoi-zoho.html">Pourquoi Zoho ?</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="avis.html">Avis clients</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+      <div class="footer-col"><h4>Ressources</h4><ul><li><a href="statut-zoho.html">Statut serveurs Zoho</a></li><li><a href="realisations.html">Études de cas</a></li><li><a href="https://store.zoho.eu/ResellerCustomerSignUp.do?id=23485ec546ddc9b73a7d4bac2358c5e1&amp;locale=fr" target="_blank" rel="noopener noreferrer" class="footer-trial-mini">Essai gratuit Zoho 🚀</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@rocket-it.fr">📧 contact@rocket-it.fr</a></li><li><a href="contact.html">📅 Consultation gratuite</a></li><li class="contact-bases">🌍 Toute la France &amp; international</li><li class="contact-bases">📍 Besançon · Lyon · Drôme/Ardèche</li></ul></div>
     </div>
-  </footer>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> ROCKET&nbsp;IT 🚀 — Tous droits réservés</span><span class="footer-legal-links"><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a></span></div>
+  </div>
+</footer>
 
-  <!-- JS principal -->
-  <script src="/js/main.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Force sortie iframe si chargée dans Zoho Bookings embed -->
-  <script>
-    if (window.self !== window.top) {
-      window.top.location.href = 'https://www.rocket-it.fr/merci-rdv.html';
-    }
-  </script>
+<!-- Force exit iframe if loaded inside Zoho Bookings embed -->
+<script>
+  if (window.self !== window.top) {
+    window.top.location.href = 'https://www.rocket-it.fr/merci-rdv.html';
+  }
+</script>
 
 </body>
 </html>
